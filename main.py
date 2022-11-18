@@ -6,11 +6,8 @@ items = [] #make items a blank vairable
 item= '' #make item a blank variable
 
 varis.tax = varis.tax + 1 #for easy math
-
-
     
 def calc(): #the calculating function, all of the ifs are the same except for the else and different numbers
-
     global item #make item a global variable
     global i #make i a global variable
     thing = input('What item would you like to buy? ') #ask for the item wanted to be bought
@@ -24,13 +21,11 @@ def calc(): #the calculating function, all of the ifs are the same except for th
             print(varis.mesage2) #print a message I have in the varis.py code
             item = float(i)*float(quant) # set item to the price * quantity
             items.append(item) #append the non sales tax affected item into the items list
-            print(items) #print the items list
             recurse()        #loop
         else:
             print('1 million dollars!') #simple print statement for an easter egg
             price = 1000000 #set the price to $1,000,000
             items.append(price) #append the price onto the items list
-            print(items) #print the itemslist
             recurse() #loop
             
     else: #here is the difference
@@ -41,18 +36,17 @@ def calc(): #the calculating function, all of the ifs are the same except for th
             items.append(it) # append the price to the items list
             print('$',price) #print the price with sales tax applied
             print(varis.mesage2) #print a message i have in varis.py
-            print(items)    #print the items list
             recurse() #loop
 
         else:
             print('1 million dollars!') #simple print statement for an easter egg
-            price = 1000000 #set the price to $1,000,000
+            price = 1000000.00 #set the price to $1,000,000
             items.append(price) #append the price onto the items list
-            print(items) #print the itemslist
             recurse()  #loop 
     
     
 def init(): #the initialization function, doesn't do much
+    print(varis.logo)
     print(f"The items are") # simple print statement
     for x in range(len(varis.thinglist)): # for the ammount of items in varis.thinglist...
         print(varis.thinglist[x]) #print the item 

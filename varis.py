@@ -3,4 +3,10 @@ message = 'Tax is .0625 per dollar in Idaho'
 mesage2 = 'price for this only, not added for total'
 thinglist = ['Diet Dr Thunder', 'Painting', 'Porkchop', 'Laptop', 'Iphone', 'Diet Sunkist']
 costlist = [1.18, 2.96, 4.36, 530.00, 1080.00, 1.48]
+logo = '''
+           __   __             __  
+\  /  /\  |__) /  `  /\  |    /  ` 
+ \/  /~~\ |  \ \__, /~~\ |___ \__, 
+                                   
+'''
 
