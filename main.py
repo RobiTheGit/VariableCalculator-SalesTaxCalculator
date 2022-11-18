@@ -38,18 +38,22 @@ def calc(): #the calculating function, all of the ifs are the same except for th
             recurse() #loop
             
         else:
-            print('1 million dollars!') #simple print statement for an easter egg
-            price = 1000000.00 #set the price to $1,000,000
-            items.append(price) #append the price onto the items list
-            recurse()  #loop   
-              
+            funeh()
+def funeh():
+    print('1 million dollars!') #simple print statement for an easter egg
+    price = 1000000.00 #set the price to $1,000,000
+    items.append(price) #append the price onto the items list
+    recurse()  #loop                 
 def init(): #the initialization function, doesn't do much
     print(varis.logo)
     print(f"The items are") # simple print statement
     for x in range(len(varis.thinglist)): # for the ammount of items in varis.thinglist...
-        print(varis.thinglist[x]) #print the item 
-    calc() #if so, calculate
-    
+        print(varis.thinglist[x]) #print the item
+    try: 
+        calc() #if so, calculate
+    except:
+        print(f'{varis.ccodes[6]}An Error Occured{varis.ccodes[1]}')
+        recurse()
 def recurse(): #the loop function
     choice = input('Would you like to keep shopping(yes/no answer those only)? ') #ask if the user wants to keep going with this
     if choice == 'no': #see if the choice is no
